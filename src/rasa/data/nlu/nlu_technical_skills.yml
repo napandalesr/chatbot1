@@ -1,0 +1,23 @@
+version: "3.1"
+
+nlu:
+  - intent: preguntar_habilidad_tecnologia_especifica
+    examples: |
+      - [React](tecnologia)
+      - [TypeScript](tecnologia) 
+      - [Node.js](tecnologia)
+      - [Docker](tecnologia)
+      - [PostgreSQL](tecnologia)
+      - [Next.js](tecnologia)
+      - [NestJS](tecnologia)
+      - ¿Sabes usar [React](tecnologia)?
+      - ¿Manejas [TypeScript](tecnologia)?
+      - ¿Conoces [Docker](tecnologia)?
+      - ¿Dominas [Node.js](tecnologia)?
+      - ¿Tienes conocimientos de [PostgreSQL](tecnologia)?
+      - ¿Estás familiarizado con [Next.js](tecnologia)?
+      - ¿Tienes skills en [NestJS](tecnologia)?
+      - sabes [react](tecnologia)?
+      - conoces [docker](tecnologia)?
+      - manejas [typescript](tecnologia)?
+      - ¿y [node.js](tecnologia) lo sabes?

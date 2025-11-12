@@ -1,0 +1,34 @@
+version: "3.1"
+
+rules:
+  - rule: Saludo
+    steps:
+      - intent: saludar
+      - action: action_utter_saludar
+
+  - rule: Despedida
+    steps:
+      - intent: despedir
+      - action: utter_despedir
+      
+  - rule: Experiencia
+    steps:
+      - intent: preguntar_experiencia_tecnologia_especifica
+      - action: action_responder_experiencia_tecnologia
+    #  - active_loop: null
+      
+  - rule: Habilidad
+    steps:
+      - intent: preguntar_habilidad_tecnologia_especifica
+      - action: action_responder_habilidad_tecnologia
+    #  - active_loop: null
+
+  - rule: Responder experiencia laboral general
+    steps:
+    - intent: preguntar_experiencia_laboral_general
+    - action: utter_experiencia_laboral_general
+
+  - rule: Responder sobre experiencia en empresa específica
+    steps:
+    - intent: preguntar_experiencia_empresa_especifica
+    - action: utter_experiencia_laboral_especifica

@@ -1,0 +1,73 @@
+version: "3.1"
+
+stories:
+  - story: Saludo
+    steps:
+      - intent: saludar
+      - action: action_utter_saludar
+
+  - story: Despedida
+    steps:
+      - intent: despedir
+      - action: utter_despedir
+      
+  - story: Pregunta sobre experiencia con una tecnología
+    steps:
+      - intent: preguntar_experiencia_tecnologia_especifica
+      - action: action_responder_experiencia_tecnologia
+
+  - story: Pregunta sobre habilidad con una tecnología
+    steps:
+      - intent: preguntar_habilidad_tecnologia_especifica
+      - action: action_responder_habilidad_tecnologia
+
+  - story: Pregunta sobre experiencia general
+    steps:
+      - intent: preguntar_experiencia_laboral_general
+      - action: utter_experiencia_laboral_general
+
+  - story: Pregunta sobre experiencia en empresa específica
+    steps:
+      - intent: preguntar_experiencia_empresa_especifica  
+      - action: utter_experiencia_laboral_especifica     
+
+  - story: Saludo seguido de pregunta sobre experiencia tecnológica
+    steps:
+      - intent: saludar
+      - action: action_utter_saludar
+      - intent: preguntar_experiencia_tecnologia_especifica
+      - action: action_responder_experiencia_tecnologia
+
+  - story: Saludo seguido de pregunta sobre conocimiento tecnológico
+    steps:
+      - intent: saludar
+      - action: action_utter_saludar
+      - intent: preguntar_habilidad_tecnologia_especifica
+      - action: action_responder_habilidad_tecnologia
+
+  - story: Saludo seguido de pregunta sobre experiencia tecnológica y habilidad
+    steps: 
+      - intent: saludar
+      - action: action_utter_saludar
+      - intent: preguntar_experiencia_tecnologia_especifica
+      - action: action_responder_experiencia_tecnologia
+      - intent: preguntar_habilidad_tecnologia_especifica
+      - action: action_responder_habilidad_tecnologia
+
+  - story: Experiencia general seguida de empresa específica
+    steps:
+      - intent: preguntar_experiencia_laboral_general
+      - action: utter_experiencia_laboral_general
+      - intent: preguntar_experiencia_empresa_especifica  
+      - action: utter_experiencia_laboral_especifica      
+
+  - story: Conversación completa con despedida
+    steps:
+      - intent: saludar
+      - action: action_utter_saludar
+      - intent: preguntar_habilidad_tecnologia_especifica
+      - action: action_responder_habilidad_tecnologia
+      - intent: preguntar_experiencia_tecnologia_especifica
+      - action: action_responder_experiencia_tecnologia
+      - intent: despedir
+      - action: utter_despedir

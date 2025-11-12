@@ -1,0 +1,135 @@
+version: "3.1"
+nlu:
+  - synonym: react
+    examples: |
+      - React
+      - React.js
+      - ReactJS
+      - React js
+      - react
+      - REACT
+
+  - synonym: typescript
+    examples: |
+      - TypeScript
+      - TS
+      - Typescript
+      - typescript
+      - TYPESCRIPT
+
+  - synonym: node.js
+    examples: |
+      - Node.js
+      - Node
+      - NodeJS
+      - Node js
+      - node
+      - NODE
+
+  - synonym: next.js
+    examples: |
+      - Next.js
+      - Next
+      - NextJS
+      - Next js
+      - nextjs
+      - next.js
+      - next
+
+  - synonym: nestjs
+    examples: |
+      - NestJS
+      - Nest
+      - Nest JS
+      - nestjs
+      - nest
+
+  - synonym: docker
+    examples: |
+      - Docker
+      - docker
+      - DOCKER
+
+  - synonym: postgresql
+    examples: |
+      - PostgreSQL
+      - Postgres
+      - PostgreSQL
+      - postgresql
+      - postgres
+
+  - synonym: React Native
+    examples: |
+      - React Native
+      - React-Native
+      - React native
+      - react native
+
+  - synonym: GraphQL
+    examples: |
+      - GraphQL
+      - Graphql
+      - graphql
+
+  - synonym: MySQL
+    examples: |
+      - MySQL
+      - Mysql
+      - mysql
+
+  - synonym: Spring Boot
+    examples: |
+      - Spring Boot
+      - Spring
+      - Spring boot
+
+  - synonym: .NET
+    examples: |
+      - .NET
+      - DotNet
+      - dotnet
+
+  - synonym: jQuery
+    examples: |
+      - jQuery
+      - JQuery
+      - jquery
+
+  - synonym: Azure DevOps
+    examples: |
+      - Azure DevOps
+      - Azure
+      - DevOps
+
+  - synonym: Oracle
+    examples: |
+      - Oracle
+      - oracle
+
+  - synonym: MongoDB
+    examples: |
+      - MongoDB
+      - Mongo
+      - mongodb
+
+  - synonym: Python
+    examples: |
+      - Python
+      - python
+
+  - synonym: Java
+    examples: |
+      - Java
+      - java
+
+  - synonym: Vue
+    examples: |
+      - Vue
+      - Vue.js
+      - VueJS
+
+  - synonym: Angular
+    examples: |
+      - Angular
+      - Angular.js
+      - AngularJS

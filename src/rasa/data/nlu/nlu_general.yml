@@ -1,0 +1,66 @@
+version: "3.1"
+
+nlu:
+# Intenciones generales
+  - intent: saludar
+    examples: |
+      - hola
+      - buenos días
+      - buenas tardes
+      - buenas noches
+      - qué tal
+      - qué hubo
+      - ey
+      - hi
+      - hello
+      - saludos
+      - buenas
+      - qué más
+      - qué onda
+      - un gusto
+      - encantado de conocerte
+      - cómo estás
+      - qué hay de nuevo
+      - buen día
+      - hey
+      - oye
+      - hola qué tal
+      - buenos días cómo estás
+      - qué tal estás
+      - un saludo
+      - qué pasa
+      - cómo vas
+      - alegría de verte
+
+  - intent: despedir
+    examples: |
+      - adiós
+      - hasta luego
+      - nos vemos
+      - chao
+      - bye
+      - goodbye
+      - hasta pronto
+      - hasta la vista
+      - me voy
+      - tengo que irme
+      - hasta mañana
+      - cuídate
+      - que te vaya bien
+      - hasta la próxima
+      - hasta después
+      - pura vida
+      - saludos a todos
+
+  - intent: preguntar_experiencia_laboral_general
+    examples: |
+      - ¿Cuéntame sobre tu experiencia laboral?
+      - ¿Cuál es tu experiencia profesional?
+      - Háblame de tu trayectoria laboral
+      - ¿Dónde has trabajado?
+      - ¿Cuál es tu background profesional?
+      - ¿Qué experiencia tienes?
+      - ¿En qué empresas has trabajado?
+      - Cuéntame de tu carrera
+      - ¿Cuántos años de experiencia tienes?
+      - ¿Qué puestos has tenido?

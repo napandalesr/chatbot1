@@ -1,0 +1,53 @@
+version: "3.1"
+
+intents:
+  - saludar
+  - despedir
+  - preguntar_experiencia_tecnologia_especifica
+  - preguntar_habilidad_tecnologia_especifica      
+  - preguntar_experiencia_laboral_general   
+  - preguntar_experiencia_empresa_especifica 
+
+entities:
+  - tecnologia
+  - empresa
+
+slots:
+  tecnologia:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: tecnologia
+  empresa:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: empresa
+
+actions:
+  - action_utter_saludar
+  - action_responder_experiencia_tecnologia
+  - action_responder_habilidad_tecnologia
+  
+responses:
+  #utter_saludar:
+  #  - text: "¡Hola! 👋 Soy Neider, Ingeniero de Sistemas y Desarrollador Full Stack. ¿En qué puedo ayudarte hoy?"
+  #  - text: "Espero te encuentres bien! 😊 Soy Neider, Desarrollador Full Stack. ¿En qué puedo asistirte?"
+  #  - text: "¡Hola! Me da gusto saludarte. Soy Neider, especialista en desarrollo web. ¿Qué te gustaría conocer sobre mi experiencia profesional?"
+  
+  utter_despedir:
+    - text: "¡Hasta luego! 👋 Fue un gusto conversar contigo. Puedes contactarme en tu-email@neidercode.com"
+    - text: "¡Nos vemos! 😊 Éxito en tus proyectos. Recuerda que puedes visitar mi sitio web https://neidercode.com"
+    - text: "¡Hasta pronto! 🚀 Fue un placer ayudarte. ¡Que tengas excelente día!"
+
+  utter_experiencia_laboral_general:
+    - text: "Tengo más de 6 años de experiencia como Full Stack Developer..."
+
+  utter_experiencia_laboral_especifica:
+    - text: "Tengo más de 6 años de experiencia como Full Stack Developer..."
+    
+session_config:
+  session_expiration_time: 30
+  carry_over_slots_to_new_session: true
