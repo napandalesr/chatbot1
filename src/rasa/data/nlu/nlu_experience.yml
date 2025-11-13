@@ -1,18 +1,5 @@
 version: "3.1"
 nlu:
-  - intent: preguntar_experiencia_tecnologia_especifica
-    examples: |
-      - ¿Qué experiencia tienes con [React](tecnologia)?
-      - ¿Cuántos años de experiencia en [Node.js](tecnologia)?
-      - ¿Has trabajado profesionalmente con [Docker](tecnologia)?
-      - ¿En qué proyectos has usado [TypeScript](tecnologia)?
-      - cuéntame tu experiencia con [PostgreSQL](tecnologia)
-      - ¿Cuál es tu background en [Next.js](tecnologia)?
-      - experiencia laboral con [NestJS](tecnologia)
-      - años de experiencia en [react](tecnologia)
-      - proyectos donde has usado [docker](tecnologia)
-      - trayectoria con [node.js](tecnologia)
-
   - intent: preguntar_experiencia_laboral_general
     examples: |
       - ¿Cuéntame sobre tu experiencia laboral?
@@ -25,3 +12,20 @@ nlu:
       - Cuéntame de tu carrera
       - ¿Cuántos años de experiencia tienes?
       - ¿Qué puestos has tenido?
+
+  - intent: preguntar_experiencia_laboral_relevante
+    examples: |
+      - ¿Cuéntame sobre tus experiencias laborales mas destacadas?
+
+  - intent: preguntar_experiencia_tecnologia_especifica
+    examples: |
+      - ¿Qué experiencia tienes con [React](tecnologia)?
+      - ¿Cuántos años de experiencia en [Node.js](tecnologia)?
+      - ¿Has trabajado profesionalmente con [Docker](tecnologia)?
+      - ¿En qué proyectos has usado [TypeScript](tecnologia)?
+      - cuéntame tu experiencia con [PostgreSQL](tecnologia)
+      - ¿Cuál es tu background en [Next.js](tecnologia)?
+      - experiencia laboral con [NestJS](tecnologia)
+      - años de experiencia en [react](tecnologia)
+      - proyectos donde has usado [docker](tecnologia)
+      - trayectoria con [node.js](tecnologia)
