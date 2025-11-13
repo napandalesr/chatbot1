@@ -1,6 +1,20 @@
 version: "3.1"
 
 nlu:
+  - intent: preguntar_habilidad_tecnologia_general
+    examples: |
+      - ¿Qué tecnologías manejas?
+      - ¿Qué tecnologías conoces?
+      - ¿Con qué herramientas o lenguajes trabajas?
+      - ¿Qué tipo de tecnología usas para funcionar?
+      - ¿En qué plataformas estás desarrollado?
+      - ¿Qué software o sistemas manejas?
+      - ¿Qué herramientas tecnológicas dominas?
+
+  - intent: preguntar_habilidad_tecnologia_relevante
+    examples: |
+      - ¿Cuales son las tecnologías que mejor manejas?
+
   - intent: preguntar_habilidad_tecnologia_especifica
     examples: |
       - [React](tecnologia)
